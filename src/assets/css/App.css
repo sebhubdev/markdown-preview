@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/Gilroy-Light.otf');
+}
+:root
+{
+   --color-1:#3a3636;
+   --color-2:orange;
+   --color-3:rgb(95, 105, 124);
+}
+body 
+{
+  margin: 0;
+  background-color: var(--color-1);
+}
+
+*
+{
+  user-select: none;
+  font-family: 'gilroy';
+}
+
+.scroll::-webkit-scrollbar {width: 10px;}
+.scroll::-webkit-scrollbar-thumb {background-color: var(--color-3); }
+.scroll::-webkit-scrollbar-track {background-color: var(--color-1);}
+.scroll::-moz-scrollbar {width: 10px;}
+.scroll::-moz-scrollbar-thumb {background-color: var(--color-3); }
+.scroll::-moz-scrollbar-track {background-color: var(--color-1);}
+
+.App {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.header-container
+{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--color-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 20px;
+    position: relative;
+    top:0;
+}
+
+#editor-container
+{
+    width:60vw;
+    height:220px;
+    border-radius:4px;
+    overflow: hidden;
+    position: absolute;
+    top:20px;
+    left:20vw;
+    transition: all 0.5s ease-in-out;
+}
+
+#editor
+{
+    position: relative;
+    width: 100%;
+    height:180px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: none;
+    padding: 20px;
+    box-sizing: border-box;
+    resize:none;
+    border:none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+.preview-container
+{
+    width:80vw;
+    height:340px;
+    border-radius:4px;
+    overflow: hidden;
+    position: absolute;
+    top:270px;
+    left:10vw;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#preview
+{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    color: var(--color-1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+#preview h1
+{
+    font-size: 26px;
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 2px solid var(--color-1);
+}
+#preview h2
+{
+    font-size: 20px;
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 2px solid var(--color-1);
+}
+#preview a
+{
+    font-size: 18px;
+    color:var(--color-1);
+}
+#preview code
+{
+    font-size: 18px;
+    background-color: var(--color-3);
+    color:#fff;
+}
+#preview p
+{
+    font-size: 18px;
+}
+#preview pre
+{
+    font-size: 18px;
+    background-color: var(--color-3);
+    color:#fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+#preview ul
+{
+    margin: 0 0 0 40px;
+    padding: 0;
+}
+#preview ol
+{
+    margin: 0 0 0 40px;
+    padding: 0;
+}
+#preview li
+{
+    font-size: 18px;
+}
+#preview blockquote
+{
+    font-size: 20px;
+}
+#preview img
+{
+    width:100px;
+}
+
+.icon-one svg
+{
+    width:24px;
+    cursor: pointer;
+}
+.icon-one svg path
+{
+  fill:#fff;
+  transition: fill 0.5s ease;
+}
+.icon-one svg:hover > path
+{
+    fill:var(--color-2);
+}
+
+
+
